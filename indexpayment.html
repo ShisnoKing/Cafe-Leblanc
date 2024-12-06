@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="stylespay.css">
+    <title>Payment Page</title>
+</head>
+<body>
+    <header id="header" class="main header">
+        <h1 class="sitename">Cafe Leblanc</h1>
+        <nav>
+        <br> 
+        <div class="container"></div>
+    <h1>Thank You for Your Purchase!</h1>
+       <br>
+        <div class="container"></div>
+        </nav>
+    </header>
+ <h1>Payment Options</h1>
+</div>
+    
+
+    <div class="container">
+        <!-- CREDIT OR DEBIT BUTTON -->
+        <button onclick="Disapear()" class="btn">
+            <img class="debit-credit" src="img/IMG/Credit icon.png" alt="click to toggle">
+            <h2>Credit or Debit</h2>
+        </button>
+
+        <!-- Cash button -->
+        <button onclick="Cash()" class="btn">
+            <img class="cash" src="img/IMG/money.png" alt="click to toggle">
+            <h2>Pay on Arrival</h2>
+        </button>
+    </div>
+
+    <!-- Credit or debit box -->
+
+    <div class="back">
+    <div id="disapear">
+        <div class="clear">
+        <h3>Credit or Debit Card</h3></div>
+        <br><br>
+        <form>
+<label for="first">First Name:*</label>
+<input type="text" id="first" required placeholder="John">
+
+<br><br>
+
+
+<label for="middle">Middle Inital:</label>
+<input type="text" id="middle"  placeholder="Unrequired">
+
+<br><br>
+
+
+<label for="last">Last Name:*</label>
+<input type="text" id="last" required placeholder="Worthy">
+
+<br>
+<br>
+
+<label for="email">Email:*</label>
+<input type="text" id="email" required placeholder="JohnWorthy@email">
+
+<br><br>
+
+<label for="phonenum">Phone Number: </label>
+<input type="text" id="phonenum" required placeholder="(***) ***-**** ">
+<br> <br>
+<div class="banks">
+<p class="cardtype">Bank: </p>
+<br>
+<label for="Visa">Visa: </label>
+<input type="radio" id="visa" name="bank" value="Visa">
+<label for="Mastercard">Mastercard: </label>
+<input type="radio" id="Mastercard" name="bank" value="Mastercard">
+<label for="American">American Express: </label>
+<input type="radio" id="American" name="bank" value="American Express">
+<label for="Discover">Discover Card: </label>
+<input type="radio" id="Discover" name="bank" value="Discover Card">
+
+<br><br>
+<p class="cardtype">Credit or Debit?</p>
+<br>
+<label for="Credit">Credit: </label>
+<input type="radio" id="Credit" name="paymethod" value="Credit">
+
+<label for="debit">Debit: </label>
+<input type="radio" id="debit" name="paymethod" value="Debit">
+</div>
+
+<br><br>
+<label for="cardnum">Card Number: </label>
+<input type="text" id="cardnum" required placeholder="**** **** **** ****">
+
+<br><br>
+
+<label for="securCode">Security Code: </label>
+<input type="text" id="securCode" required placeholder="*** or ****">
+<br><br>
+<div class="expire">
+    <label for="expdate">Expiration Date:</label>
+    <input type="text" id="expdate" required placeholder="MM/YYYY">
+
+    <br><br>
+
+    <label for="billzip">Billing Zip Code: </label>
+    <input type="text" id="billzip" required placeholder="*****">
+</div>
+
+
+<br><br>
+<!-- <input type="text" -->
+<button class="paymentbtn" type="button" onclick="saveThenDirect()">Complete Payment</button>
+</form>
+</div>
+
+<!-- info submission box for Cash -->
+<div id="cash">
+    <div class="clear">
+<h3>Pay with Cash</h3></div>
+<br><br>
+            <label for="cashfirst">First Name:*</label>
+            <input type="text" id="cashfirst"  required placeholder="John">
+            <br><br>
+
+            <label for="cashlast">Last Name:*</label>
+            <input type="text" id="cashlast" required placeholder="Worthy">
+
+            <br><br>
+
+            <label for="cashphone">Phone Number:*</label>
+            <input type="text" id="cashphone" required placeholder="(***) ***-****">
+
+            <br><br>
+
+            <label for="cashemail">Email:*</label>
+            <input type="text" id="cashemail" required placeholder="Required">
+        
+        <br><br>
+        
+        <button class="CashPayBtnComplete" type="button" onclick="ShowMeTheMoney()">Complete Payment</button>
+
+        
+
+        </div>
+
+       </div>
+        <script src="script.js"></script>
+        <script src="home.js"></script>
+    </body>
+    </html>
