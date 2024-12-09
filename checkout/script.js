@@ -114,5 +114,5 @@ if (localStorage.getItem('paymentType') === 'cash') {
 }
 
 function TakeMeHome(){
-    window.location.href = 'indexcharles.html';
+    window.location.href = 'index.html';
 }
