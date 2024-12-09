@@ -113,46 +113,6 @@ if (localStorage.getItem('paymentType') === 'cash') {
     }
 }
 
-window.onload = function() {
-    // Get the total price from localStorage
-    var totalPrice = localStorage.getItem('cart-total-price');
-    
-    // If the total price exists, display it in the element
-    if (totalPrice) {
-        document.getElementById('cart-total-price').innerText = '$' + totalPrice;
-    } else {
-        document.getElementById('cart-total-price').innerText = 'No items found.';
-    }
+function TakeMeHome(){
+    window.location.href = 'indexcharles.html';
 }
-
-
-function mobileNavToogle() {
-    document.querySelector('body').classList.toggle('mobile-nav-active');
-    mobileNavToggleBtn.classList.toggle('bi-list');
-    mobileNavToggleBtn.classList.toggle('bi-x');
-  }
-  mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
-
-  /**
-   * Hide mobile nav on same-page/hash links
-   */
-  document.querySelectorAll('#navmenu a').forEach(navmenu => {
-    navmenu.addEventListener('click', () => {
-      if (document.querySelector('.mobile-nav-active')) {
-        mobileNavToogle();
-      }
-    });
-
-  });
-
-  /**
-   * Toggle mobile nav dropdowns
-   */
-  document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-    navmenu.addEventListener('click', function(e) {
-      e.preventDefault();
-      this.parentNode.classList.toggle('active');
-      this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
-      e.stopImmediatePropagation();
-    });
-  });
