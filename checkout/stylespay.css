@@ -244,3 +244,17 @@ h4{
     color: whitesmoke;
     font-style: italic;
 }
+
+.HOME{
+    cursor: pointer;
+    width: 25%;
+    margin: 5px;
+    background-color: #DA2417;
+    border-radius: 25px;
+    
+}
+
+.HOME:hover {
+    background-color: green;
+    font-size: 15px;
+  }
