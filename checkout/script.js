@@ -114,5 +114,5 @@ if (localStorage.getItem('paymentType') === 'cash') {
 }
 
 function TakeMeHome(){
-    window.location.href = 'index.html';
+    window.location.href = 'https://shisnoking.github.io/Cafe-Leblanc/';
 }
